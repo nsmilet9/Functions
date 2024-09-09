@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let generateRandomInsult = function () {
+            let randomBodyParts = ["face" ,"Nose", "Hair"];
+            let randomAdjectives = ["Smelly", "Nose", "Stupid"];
+            let randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
+    
+            let pickRandomWord = function (words) {
+                return words[Math.floor(Math.random() * words.length)];
+            };
+            let randomString = "Your " + pickRandomWord(randomBodyParts) + " is like a " + pickRandomWord(randomAdjectives) + " " + pickRandomWord(randomWords) + "!!!";
+            return randomString;
+        }
+        console.log(generateRandomInsult())
+     </script>
+</body>
+</html>
